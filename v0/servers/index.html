@@ -1,40 +1,41 @@
 {
    "servers":[
-      {
-         "id":"123e4567-e89b-12d3-a456-426614174000",
-         "name":"Example MCP Server",
-         "url":"https://example.com/mcp",
-         "description":"An example MCP server",
-         "created_at":"2025-08-08T13:35:26.326Z",
-         "updated_at":"2025-08-08T13:35:26.326Z"
-      },
-      {
+     {
+       "server": {
          "id":"123e4567-e89b-12d3-a456-426614172000",
          "name":"GitHub MCP server",
          "description":"GitHub's official MCP Server",
          "repository":{
-            "url":"https://github.com/github/github-mcp-server",
-            "source":"github",
-            "id":"xyz789ab-cdef-0123-4567-890ghijklmno"
+           "url":"https://github.com/github/github-mcp-server",
+           "source":"github",
+           "id":"xyz789ab-cdef-0123-4567-890ghijklmno"
          },
          "version_detail":{
-            "version":"0.11.0"
+           "version":"0.11.0"
          },
          "remotes":[
-            {
-               "transport_type":"streamable",
-               "url":"https://api.githubcopilot.com/mcp",
-               "headers":[
-                  {
-                     "name":"Bearer",
-                     "description":"Token for authentication",
-                     "is_required":true,
-                     "is_secret":true
-                  }
-               ]
-            }
+           {
+             "transport_type":"streamable",
+             "url":"https://api.githubcopilot.com/mcp",
+             "headers":[
+               {
+                 "name":"Bearer",
+                 "description":"Token for authentication",
+                 "is_required":true,
+                 "is_secret":true
+               }
+             ]
+           }
          ]
-      }
+       },
+       "x-kortex": {
+         "id": "00613acb-73e2-4f93-8b96-296df17316c8",
+         "published_at": "0001-01-01T00:00:00Z",
+         "updated_at": "2025-08-28T14:30:18.703272Z",
+         "is_latest": true,
+         "release_date": "2025-05-16T19:12:44Z"
+       }
+     }
    ],
    "metadata":{
       "next_cursor":"",
